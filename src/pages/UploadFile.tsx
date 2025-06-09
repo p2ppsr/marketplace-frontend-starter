@@ -124,7 +124,6 @@ const UploadFile: React.FC = () => {
         setStatusText
       }
 
-      console.log(filehosting)
       await publishCommitment(filehosting)
 
       setShowSuccess(true)
@@ -133,7 +132,7 @@ const UploadFile: React.FC = () => {
     } catch (error) {
       toast.error((error as Error).message);
       setErrorMessage(`Error uploading file: ${error}`)
-      console.error(e);
+      console.error(error);
     } finally {
       setIsLoading(false);
     }
