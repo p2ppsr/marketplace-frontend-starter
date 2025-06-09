@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Typography, Box, Button, Grid, Paper, CardActions, Card, CardContent, LinearProgress } from '@mui/material'
 import { Img } from '@bsv/uhrp-react'
-import { AtomicBEEF, AuthFetch, LookupResolver, PushDrop, Transaction, Utils, WalletClient } from '@bsv/sdk'
+import { AtomicBEEF, AuthFetch, LookupResolver, PushDrop, TopicBroadcaster, Transaction, Utils, WalletClient } from '@bsv/sdk'
 import constants from '../constants'
 import { decodeOutputs, DecodedOutput } from '../utils/decodeOutputs'
 
